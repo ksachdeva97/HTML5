@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Ad</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+    .container {
+      width: 336px;
+      height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+    .main-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .top-right-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px; /* adjust size as needed */
+      height: auto;
+      z-index: 2;
+      border: 2px solid #fff;
+    }
+    .click-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Main image -->
+    <img src="https://my.alfred.edu/zoom/_images/foster-lake.jpg" alt="Main Image" class="main-image" />
+    
+    <!-- Top-right overlay image -->
+    <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt="Overlay" class="top-right-image" />
+    
+    <!-- Clickable link layer -->
+    <a href="${CLICK_URL}" class="click-layer" target="_blank"></a>
+  </div>
+</body>
+</html>
